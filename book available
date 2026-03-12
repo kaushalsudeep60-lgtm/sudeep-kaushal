@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Transactions</title>
+
+<style>
+body{
+    font-family: Arial;
+    background-color:#f2f2f2;
+}
+
+.container{
+    width:700px;
+    margin:80px auto;
+    background:white;
+    padding:20px;
+    border-radius:8px;
+    box-shadow:0 0 10px gray;
+}
+
+h2{
+    text-align:center;
+}
+
+.top-menu{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.top-menu button{
+    padding:8px 15px;
+    margin:5px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+td{
+    padding:10px;
+}
+
+input, select{
+    padding:6px;
+    width:200px;
+}
+
+.logout{
+    text-align:center;
+    margin-top:20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Transactions</h2>
+
+<div class="top-menu">
+<button>Chart</button>
+<button>Home</button>
+</div>
+
+<table>
+
+<tr>
+<td><b>Is book available?</b></td>
+<td><b>Book Availability</b></td>
+</tr>
+
+<tr>
+<td><b>Issue book?</b></td>
+<td>
+Enter Book Name
+<select>
+<option>Select Book</option>
+<option>Science</option>
+<option>Economics</option>
+<option>Fiction</option>
+<option>Children</option>
+<option>Personal Development</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td><b>Return book?</b></td>
+<td>
+Enter Author
+<select>
+<option>Select Author</option>
+<option>Author 1</option>
+<option>Author 2</option>
+<option>Author 3</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td><b>Pay Fine?</b></td>
+<td><input type="text" placeholder="Enter Fine Amount"></td>
+</tr>
+
+</table>
+
+<div class="logout">
+<button>Log Out</button>
+</div>
+
+</div>
+
+</body>
+</html>
