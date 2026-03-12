@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Library Transactions</title>
+
+<style>
+body{
+    font-family: Arial;
+    background-color:#f2f2f2;
+}
+
+.container{
+    width:900px;
+    margin:60px auto;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
+}
+
+h2{
+    text-align:center;
+}
+
+.top-menu{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.top-menu button{
+    padding:8px 15px;
+    margin:5px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table, th, td{
+    border:1px solid black;
+}
+
+th, td{
+    padding:8px;
+    text-align:center;
+}
+
+.logout{
+    text-align:center;
+    margin-top:20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Transactions</h2>
+
+<div class="top-menu">
+<button>Chart</button>
+<button>Home</button>
+</div>
+
+<h3>Is Book Available? - Book Availability</h3>
+
+<table>
+
+<tr>
+<th>Issue Book?</th>
+<th>Book Name</th>
+<th>Author Name</th>
+<th>Serial Number</th>
+<th>Available</th>
+<th>Select to Issue</th>
+</tr>
+
+<tr>
+<td>Issue Book</td>
+<td>Science Book</td>
+<td>Author A</td>
+<td>001</td>
+<td>Y</td>
+<td><input type="radio" name="issue"></td>
+</tr>
+
+<tr>
+<td>Return Book</td>
+<td>A</td>
+<td>Author Name</td>
+<td>002</td>
+<td>Y</td>
+<td><input type="radio" name="issue"></td>
+</tr>
+
+<tr>
+<td>Pay Fine</td>
+<td>A</td>
+<td>Author Name</td>
+<td>003</td>
+<td>Y</td>
+<td><input type="radio" name="issue"></td>
+</tr>
+
+<tr>
+<td>Pay Fine</td>
+<td>A</td>
+<td>Author Name</td>
+<td>004</td>
+<td>N</td>
+<td></td>
+</tr>
+
+</table>
+
+<div class="logout">
+<button>Log Out</button>
+</div>
+
+</div>
+
+</body>
+
+</html>
