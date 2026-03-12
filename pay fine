@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Library Transactions - Pay Fine</title>
+
+<style>
+body{
+    font-family: Arial;
+    background-color:#f2f2f2;
+}
+
+.container{
+    width:800px;
+    margin:50px auto;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
+}
+
+h2{
+    text-align:center;
+}
+
+.menu{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.menu button{
+    padding:8px 15px;
+    margin:5px;
+    background:#007BFF;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+table{
+    width:100%;
+}
+
+td{
+    padding:10px;
+}
+
+input, textarea{
+    width:200px;
+    padding:5px;
+}
+
+.logout{
+    text-align:center;
+    margin-top:20px;
+}
+
+.logout button{
+    background:red;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Transactions - Pay Fine</h2>
+
+<div class="menu">
+<button>Chart</button>
+<button>Transactions</button>
+<button>Home</button>
+</div>
+
+<table>
+
+<tr>
+<td><b>Is book available?</b></td>
+<td>Pay Fine</td>
+</tr>
+
+<tr>
+<td><b>Issue book?</b></td>
+<td>
+Enter Book Name<br>
+<input type="text" placeholder="Book Name">
+</td>
+</tr>
+
+<tr>
+<td><b>Return book?</b></td>
+<td>
+Enter Author<br>
+<input type="text" placeholder="Author Name">
+</td>
+</tr>
+
+<tr>
+<td><b>Pay Fine?</b></td>
+<td>
+Serial No<br>
+<input type="text">
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>
+Issue Date<br>
+<input type="date">
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>
+Return Date<br>
+<input type="date">
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>
+Actual Return Date<br>
+<input type="date">
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>
+Fine Calculated<br>
+<input type="text" value="0">
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>
+Fine Paid
+<input type="checkbox">
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>
+Remarks<br>
+<textarea rows="3" placeholder="Optional"></textarea>
+</td>
+</tr>
+
+</table>
+
+<div class="logout">
+<button>Log Out</button>
+</div>
+
+</div>
+
+</body>
+</html>
