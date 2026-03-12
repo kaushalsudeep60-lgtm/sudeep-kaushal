@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Library Reports</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background-color:#f2f2f2;
+}
+
+.container{
+    width:700px;
+    margin:60px auto;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
+}
+
+h2{
+    text-align:center;
+}
+
+.menu{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.menu button{
+    padding:10px 15px;
+    margin:5px;
+    border:none;
+    background:#007BFF;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.menu button:hover{
+    background:#0056b3;
+}
+
+.reports{
+    margin-top:20px;
+}
+
+.reports button{
+    display:block;
+    width:300px;
+    margin:10px auto;
+    padding:10px;
+    border:none;
+    background:#28a745;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.reports button:hover{
+    background:#1e7e34;
+}
+
+.logout{
+    text-align:center;
+    margin-top:25px;
+}
+
+.logout button{
+    padding:10px 20px;
+    background:red;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+</style>
+
+<script>
+
+function report(name){
+    alert(name + " Report Opened");
+}
+
+function logout(){
+    alert("Logged Out Successfully");
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Available Reports</h2>
+
+<div class="menu">
+<button>Chart</button>
+<button>Home</button>
+</div>
+
+<div class="reports">
+
+<button onclick="report('Master List of Books')">Master List of Books</button>
+
+<button onclick="report('Master List of Movies')">Master List of Movies</button>
+
+<button onclick="report('Master List of Memberships')">Master List of Memberships</button>
+
+<button onclick="report('Active Issues')">Active Issues</button>
+
+<button onclick="report('Overdue Returns')">Overdue Returns</button>
+
+<button onclick="report('Pending Issue Requests')">Pending Issue Requests</button>
+
+</div>
+
+<div class="logout">
+<button onclick="logout()">Log Out</button>
+</div>
+
+</div>
+
+</body>
+</html>
