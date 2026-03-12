@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Library Transactions</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background-color:#f2f2f2;
+}
+
+.container{
+    width:900px;
+    margin:50px auto;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
+}
+
+h2{
+    text-align:center;
+}
+
+.menu{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.menu button{
+    padding:10px 15px;
+    margin:5px;
+    border:none;
+    background:#007BFF;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.menu button:hover{
+    background:#0056b3;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table, th, td{
+    border:1px solid black;
+}
+
+th{
+    background:#e6e6e6;
+}
+
+th, td{
+    padding:10px;
+    text-align:center;
+}
+
+.actions{
+    text-align:center;
+    margin-top:20px;
+}
+
+.actions button{
+    padding:10px 15px;
+    margin:5px;
+    border:none;
+    background:green;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.logout{
+    text-align:center;
+    margin-top:20px;
+}
+
+.logout button{
+    padding:10px 20px;
+    background:red;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+</style>
+
+<script>
+
+function chart(){
+    alert("Chart Page");
+}
+
+function home(){
+    alert("Home Page");
+}
+
+function issueBook(){
+    alert("Book Issued Successfully");
+}
+
+function returnBook(){
+    alert("Book Returned Successfully");
+}
+
+function payFine(){
+    alert("Fine Paid Successfully");
+}
+
+function logout(){
+    alert("Logged Out Successfully");
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Transactions</h2>
+
+<div class="menu">
+<button onclick="chart()">Chart</button>
+<button onclick="home()">Home</button>
+</div>
+
+<h3>Book Availability</h3>
+
+<table>
+
+<tr>
+<th>Action</th>
+<th>Book Name</th>
+<th>Author Name</th>
+<th>Serial Number</th>
+<th>Available</th>
+<th>Select</th>
+</tr>
+
+<tr>
+<td>Issue Book</td>
+<td>Science</td>
+<td>Author A</td>
+<td>001</td>
+<td>Y</td>
+<td><input type="radio" name="book"></td>
+</tr>
+
+<tr>
+<td>Return Book</td>
+<td>Economics</td>
+<td>Author B</td>
+<td>002</td>
+<td>Y</td>
+<td><input type="radio" name="book"></td>
+</tr>
+
+<tr>
+<td>Pay Fine</td>
+<td>Fiction</td>
+<td>Author C</td>
+<td>003</td>
+<td>Y</td>
+<td><input type="radio" name="book"></td>
+</tr>
+
+<tr>
+<td>Pay Fine</td>
+<td>Children</td>
+<td>Author D</td>
+<td>004</td>
+<td>N</td>
+<td>-</td>
+</tr>
+
+</table>
+
+<div class="actions">
+<button onclick="issueBook()">Issue Book</button>
+<button onclick="returnBook()">Return Book</button>
+<button onclick="payFine()">Pay Fine</button>
+</div>
+
+<div class="logout">
+<button onclick="logout()">Log Out</button>
+</div>
+
+</div>
+
+</body>
+</html>
