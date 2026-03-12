@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Reports - Master List of Movies</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f2f2f2;
+}
+
+.container{
+    width:1000px;
+    margin:40px auto;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
+}
+
+h2{
+    text-align:center;
+}
+
+.menu{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.menu button{
+    padding:10px 15px;
+    margin:5px;
+    border:none;
+    background:#007BFF;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.content{
+    display:flex;
+}
+
+.left{
+    width:30%;
+    padding:10px;
+}
+
+.left button{
+    display:block;
+    width:100%;
+    padding:10px;
+    margin:5px 0;
+    background:#28a745;
+    color:white;
+    border:none;
+    border-radius:5px;
+}
+
+.right{
+    width:70%;
+    padding:10px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table, th, td{
+    border:1px solid black;
+}
+
+th, td{
+    padding:8px;
+    text-align:center;
+}
+
+th{
+    background:#e6e6e6;
+}
+
+.logout{
+    text-align:center;
+    margin-top:20px;
+}
+
+.logout button{
+    padding:10px 20px;
+    background:red;
+    color:white;
+    border:none;
+    border-radius:5px;
+}
+
+.note{
+    margin-top:15px;
+    font-size:14px;
+    color:#333;
+}
+
+</style>
+
+<script>
+
+var userType = "admin";   // change to "user" if normal user
+
+function goHome(){
+    if(userType === "admin"){
+        alert("Redirecting to Admin Home Page");
+    }else{
+        alert("Redirecting to User Home Page");
+    }
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Reports</h2>
+
+<div class="menu">
+<button>Chart</button>
+<button>Reports</button>
+<button onclick="goHome()">Home</button>
+</div>
+
+<div class="content">
+
+<div class="left">
+
+<button>Master List of Books</button>
+<button>Master List of Movies</button>
+<button>Master List of Memberships</button>
+<button>Active Issues</button>
+<button>Overdue Returns</button>
+<button>Issue Requests</button>
+
+</div>
+
+<div class="right">
+
+<h3>Master List of Movies</h3>
+
+<table>
+
+<tr>
+<th>Serial No</th>
+<th>Name of Movie</th>
+<th>Author Name</th>
+<th>Category</th>
+<th>Status</th>
+<th>Cost</th>
+<th>Procurement Date</th>
+</tr>
+
+<tr>
+<td>001</td>
+<td>Inception</td>
+<td>Christopher Nolan</td>
+<td>Sci-Fi</td>
+<td>Available</td>
+<td>700</td>
+<td>10-01-2024</td>
+</tr>
+
+<tr>
+<td>002</td>
+<td>Avatar</td>
+<td>James Cameron</td>
+<td>Fantasy</td>
+<td>Issued</td>
+<td>650</td>
+<td>15-02-2024</td>
+</tr>
+
+<tr>
+<td>003</td>
+<td>Toy Story</td>
+<td>John Lasseter</td>
+<td>Animation</td>
+<td>Available</td>
+<td>500</td>
+<td>05-03-2024</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+<div class="logout">
+<button>Log Out</button>
+</div>
+
+<div class="note">
+<b>Note:</b> If logged in as Admin - Home will take you to the Admin Home Page.
+</div>
+
+</div>
+
+</body>
+</html>
