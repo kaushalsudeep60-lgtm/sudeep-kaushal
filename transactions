@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Transactions</title>
+
+<style>
+body{
+    font-family: Arial;
+    background-color: #f0f0f0;
+}
+
+.container{
+    width: 500px;
+    margin: 100px auto;
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+button{
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.top-buttons{
+    margin-bottom: 20px;
+}
+
+.logout{
+    margin-top: 20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Transactions</h2>
+
+<div class="top-buttons">
+<button>Chart</button>
+<button>Home</button>
+</div>
+
+<button>Is Book Available?</button><br>
+<button>Issue Book</button><br>
+<button>Return Book</button><br>
+<button>Pay Fine</button>
+
+<div class="logout">
+<button>Log Out</button>
+</div>
+
+</div>
+
+</body>
+</html>
